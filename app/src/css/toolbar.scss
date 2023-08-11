@@ -1,0 +1,54 @@
+@import './variables.scss';
+.toolbar{
+	height: $toolbar-height;
+	background-color: white;
+	display: flex;
+	align-items: cdnter;
+	position: absolute;
+	width: 100%;
+	box-shadow: 0 4px 5px gray;
+	z-index: 999;
+	
+	&__btn{
+		height: 25px;
+		width: 25px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		background-size: cover;
+		margin-top: 5px;
+		margin-left: 10px;
+	}
+	.brush{
+		background: url('../assets/brush.png') no-repeat center center;
+	}
+	.erase{
+		background: url('../assets/eraser.png') no-repeat center center;
+	}
+	.rect{
+		background: url('../assets/rect.png') no-repeat center center;
+	}
+	.undo{
+		margin-left: auto;
+		background: url('../assets/undo.png') no-repeat center center;
+	}
+	.redo{
+		background: url('../assets/redo.png') no-repeat center center;
+	}
+	.save{
+		margin-right: 10px;
+		background: url('../assets/save.png') no-repeat center center;
+	}
+	
+}
+
+.settingbar{
+	height: $toolbar-height;
+	background-color: white;
+	display: flex;
+	align-items: cdnter;
+	position: absolute;
+	width: 100%;
+	box-shadow: 0 4px 5px gray;
+	top:$toolbar-height;
+}
